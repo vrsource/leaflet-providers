@@ -69,7 +69,7 @@
 	//jshint maxlen:220
 	L.TileLayer.Provider.providers = {
 		OpenStreetMap: {
-			url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 			options: {
 				attribution:
 					'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -77,13 +77,13 @@
 			variants: {
 				Mapnik: {},
 				BlackAndWhite: {
-					url: 'http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png'
+					url: 'https://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png'
 				},
 				DE: {
-					url: 'http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png'
+					url: 'https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png'
 				},
 				HOT: {
-					url: 'http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
+					url: 'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
 					options: {
 						attribution: '{attribution.OpenStreetMap}, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
 					}
@@ -145,7 +145,7 @@
 			variants: {
 				Full: 'full',
 				Base: 'base',
-				RoadsAndLabels: 'roads_and_labels',
+				RoadsAndLabels: 'roads_and_labels'
 			}
 		},
 		MapQuestOpen: {
@@ -222,7 +222,7 @@
 			}
 		},
 		Esri: {
-			url: 'http://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}',
+			url: 'https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}',
 			options: {
 				variant: 'World_Street_Map',
 				attribution: 'Tiles &copy; Esri'
